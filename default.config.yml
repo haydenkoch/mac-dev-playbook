@@ -32,9 +32,6 @@ dotfiles_files:
   - .osx
   - .vimrc
 
-homebrew_taps:
-  - koekeishiya/formulae/yabai
-
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
@@ -61,7 +58,9 @@ homebrew_installed_packages:
   - lolcat
   - btop
   - thefuck
-  - yabai
+  - stow
+
+homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
