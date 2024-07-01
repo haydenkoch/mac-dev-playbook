@@ -1,6 +1,6 @@
 ---
-configure_dotfiles: true
-configure_terminal: true
+configure_dotfiles: false
+configure_terminal: false
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
@@ -32,49 +32,57 @@ dotfiles_files:
   - .osx
   - .vimrc
 
+homebrew_taps:
+  - koekeishiya/formulae/yabai
+
+
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - gh
-  - go
   - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - nmap
   - node
   - nvm
-  - php
-  - ssh-copy-id
   - cowsay
-  - readline
   - openssl
   - pv
   - wget
-  - wrk
-  - zsh-history-substring-search
-
-homebrew_taps: []
+  - docker
+  - fish
+  - starship
+  - tmux
+  - neovim
+  - pnpm
+  - zoxide
+  - bat
+  - fzf
+  - fortune
+  - neofetch
+  - lolcat
+  - btop
+  - thefuck
+  - yabai
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
-  - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
-  - slack
-  - sublime-text
-  - transmit
+  - arc
+  - raycast
+  - adobe-creative-cloud
+  - mountain-duck
+  - 1password
+  - 1password-cli
+  - balenaetcher
+  - cyberduck
+  - dbngin
+  - devkinsta
+  - fantastical
+  - logitech-g-hub
+  - nvidia-geforce-now
+  - obsidian
+  - qbittorrent
+  - setapp
+  - visual-studio-code
+  - wezterm
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
