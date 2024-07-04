@@ -47,7 +47,6 @@ homebrew_installed_packages:
   - btop
   - thefuck
   - stow
-  - yabai
 
 homebrew_taps:
   - { name: koekeishiya/yabai, url: 'https://github.com/koekeishiya/yabai.git' }
