@@ -1,10 +1,10 @@
 ---
-configure_dotfiles: false
-configure_terminal: false
-configure_osx: true
-
 # Set to 'true' to configure the Dock via dockutil.
+configure_dotfiles: true
+configure_osx: false
+
 configure_dock: false
+
 dockitems_remove: []
 # - Launchpad
 # - TV
@@ -22,17 +22,6 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
-dotfiles_files:
-  - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
-
-
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - git
@@ -44,7 +33,6 @@ homebrew_installed_packages:
   - openssl
   - pv
   - wget
-  - docker
   - fish
   - starship
   - tmux
@@ -59,8 +47,10 @@ homebrew_installed_packages:
   - btop
   - thefuck
   - stow
+  - yabai
 
-homebrew_taps: []
+homebrew_taps:
+  - { name: koekeishiya/yabai, url: 'https://github.com/koekeishiya/yabai.git' }
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -82,13 +72,12 @@ homebrew_cask_apps:
   - setapp
   - visual-studio-code
   - wezterm
+  - docker
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
 mas_email: ""
 mas_password: ""
-
-osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
@@ -109,24 +98,6 @@ pip_packages: []
 # - name: mkdocs
 #   state: present # present/absent/latest, default: present
 #   version: "0.16.3" # default: N/A
-
-# Set to 'true' to configure Sublime Text.
-configure_sublime: false
-sublime_base_path: '~/Library/Application Support/Sublime Text'
-sublime_config_path: "Packages/User"
-sublime_package_control:
-  - "DocBlockr"
-  - "Dockerfile Syntax Highlighting"
-  - "FileDiffs"
-  - "GitHub Flavored Markdown Preview"
-  - "Jinja2"
-  - "Package Control"
-  - "PHP-Twig"
-  - "Pretty JSON"
-  - "SublimeLinter"
-  - "SublimeLinter-contrib-yamllint"
-  - "TrailingSpaces"
-  - "WordCount"
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []

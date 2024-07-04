@@ -1,0 +1,9 @@
+---
+- name: Download dotfiles repository.
+  git:
+    repo: 'https://github.com/haydenkoch/dotfiles'
+    dest: ~/.dotfiles
+    version: main
+
+- name: Stow tasks/dotfiles
+  shell: stow -t ~ */
