@@ -47,9 +47,10 @@ homebrew_installed_packages:
   - btop
   - thefuck
   - stow
-
+  - yabai
+  - skhd
 homebrew_taps:
-  - { name: koekeishiya/yabai, url: 'https://github.com/koekeishiya/yabai.git' }
+  - koekeishiya/formulae
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -72,6 +73,7 @@ homebrew_cask_apps:
   - visual-studio-code
   - wezterm
   - docker
+  - font-fira-code-nerd-font
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
